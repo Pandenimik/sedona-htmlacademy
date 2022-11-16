@@ -11,3 +11,9 @@ body {
   min-height: 100vh;
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
+
+/* Обнуляем свойства списков по умолчанию */
+.navigation > ul {
+  margin: 0;
+  list-style: none;
+}
