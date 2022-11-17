@@ -1,7 +1,36 @@
+:root {
+  --simple-text-color: #333;
+}
+
 body {
   background-color: #eee;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+}
+
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .wrapper {
@@ -12,8 +41,78 @@ body {
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
-/* Обнуляем свойства списков по умолчанию */
-.navigation > ul {
+.navigation {
+  height: 70px;
+  padding: 0 72px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Обнуляем стили по умолчанию списков меню*/
+.navigation > menu {
   margin: 0;
   list-style: none;
+  padding: 15px 0 0;
+  width: 100%;
+}
+
+/* Обнуляем стили по умолчанию ссылок меню*/
+menu a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.left-navigation-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-navigation-menu_item:not(:first-child)  {
+  margin: 0 auto;
+}
+
+.right-navigation-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+.right-navigation-menu_item:not(:last-child)  {
+  margin: 0 auto;
+}
+
+.banner {
+  width: 1200px;
+  height: 509px;
+  background-image: url(../img/background\ photo.jpg);
+  margin-top: -17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.recomendations {
+  padding-top: 42px;
+}
+
+.recomendations > .bold-text {
+  margin: 0 0 44px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.recomendations > .simple-text {
+  margin: 0 0 51px 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--simple-text-color);
 }
