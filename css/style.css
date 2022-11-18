@@ -1,5 +1,9 @@
 :root {
   --simple-text-color: #333;
+  --recomendation-text-bgrnd-color: #eee;
+  --recomendation-advice-bkrnd-color: #fff;
+  --recomendations-inverse-bgrnd-color: #81B3D2;
+  --recomendations-inverse-text-color: #fff;
 }
 
 body {
@@ -115,4 +119,67 @@ menu a {
   line-height: 26px;
   text-align: center;
   color: var(--simple-text-color);
+}
+
+.recomendations-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recomendations-list_item {
+  display: flex;
+}
+
+.recomendation-text {
+  width: 400px;
+  height: 256px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--recomendation-text-bgrnd-color);
+}
+
+.recomendation-text__inverse {
+  background-color: var(--recomendations-inverse-bgrnd-color);
+  color: var(--recomendations-inverse-text-color);
+}
+
+.recomendation-text_heading {
+  margin-bottom: 25px;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.recomendation-text_main-text {
+  margin: 0 0 23px 0;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.recomendation-text_main-text__other-style {
+  color: var(--simple-text-color);
+}
+
+.recomendation-img {
+  background-color: var(--recomendations-inverse-bgrnd-color);
+}
+
+.recomendation-text__advice {
+  height: 330px;
+  background-color: var(--recomendation-advice-bkrnd-color);
+}
+
+.recomendation-icon {
+  margin-bottom: 29px;
+}
+
+.recomendation-img {
+  width: 800px;
+  height: 256px;
 }
