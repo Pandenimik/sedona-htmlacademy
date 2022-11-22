@@ -226,19 +226,12 @@ menu a {
 .map {
   width: 1200px;
   height: 594px;
-  display: grid;
-  grid-template-areas: 'map-area';
-}
-
-.map-img {
-  grid-area: map-area;
+  background-image: url(../img/map.png);
 }
 
 .footer {
   width: 1200px;
   height: 120px;
-  grid-area: map-area;
-  margin-top: auto;
+  margin-top: -120px;
   background-color: var(--footer-bakgrnd-transparent-color);
-  z-index: 100;
 }
