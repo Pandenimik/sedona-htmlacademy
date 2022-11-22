@@ -4,6 +4,8 @@
   --recomendation-advice-bkrnd-color: #fff;
   --recomendations-inverse-bgrnd-color: #81B3D2;
   --recomendations-inverse-text-color: #fff;
+  --button-color-1: #766357;
+  --footer-bakgrnd-transparent-color: rgba(255, 255, 255, 0.9);
 }
 
 body {
@@ -182,4 +184,61 @@ menu a {
 .recomendation-img {
   width: 800px;
   height: 256px;
+}
+
+.hotel-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 58px;
+}
+
+.hotel-search > .bold-text {
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.hotel-search > .simple-text {
+  margin: 0 0 45px 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--simple-text-color);
+}
+
+.hotel-search_button {
+  width: 568px;
+  height: 86px;
+  border: none;
+  color: var(--recomendations-inverse-text-color);
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: var(--button-color-1);
+}
+
+.map {
+  width: 1200px;
+  height: 594px;
+  display: grid;
+  grid-template-areas: 'map-area';
+}
+
+.map-img {
+  grid-area: map-area;
+}
+
+.footer {
+  width: 1200px;
+  height: 120px;
+  grid-area: map-area;
+  margin-top: auto;
+  background-color: var(--footer-bakgrnd-transparent-color);
+  z-index: 100;
 }
