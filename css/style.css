@@ -223,15 +223,33 @@ menu a {
   background-color: var(--button-color-1);
 }
 
+.hotel-search_form {
+  width: 568px;
+  height: 394px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  grid-area: map-area;
+  position: absolute;
+  justify-self: center;
+  
+}
+
+.map-grid {
+  display: grid;
+  grid-template-areas: 'map-area';
+  position: relative;
+}
+
 .map {
   width: 1200px;
   height: 594px;
   background-image: url(../img/map.png);
+  grid-area: map-area;
 }
 
 .footer {
   width: 1200px;
   height: 120px;
-  margin-top: -120px;
+  margin-top: auto;
   background-color: var(--footer-bakgrnd-transparent-color);
+  grid-area: map-area;
 }
