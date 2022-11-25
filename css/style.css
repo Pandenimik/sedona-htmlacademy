@@ -5,7 +5,8 @@
   --recomendations-inverse-bgrnd-color: #81B3D2;
   --recomendations-inverse-text-color: #fff;
   --button-color-1: #766357;
-  --footer-bakgrnd-transparent-color: rgba(255, 255, 255, 0.9);
+  --hotel-search_form-bckgrnd-color: #fff;
+  --footer-bckgrnd-transparent-color: rgba(255, 255, 255, 0.9);
 }
 
 body {
@@ -221,6 +222,7 @@ menu a {
   line-height: 26px;
   text-transform: uppercase;
   background-color: var(--button-color-1);
+  cursor: pointer;
 }
 
 .hotel-search_form {
@@ -230,7 +232,8 @@ menu a {
   grid-area: map-area;
   position: absolute;
   justify-self: center;
-  
+  background-color: var(--hotel-search_form-bckgrnd-color); 
+  /* display: none;  */
 }
 
 .map-grid {
@@ -250,6 +253,6 @@ menu a {
   width: 1200px;
   height: 120px;
   margin-top: auto;
-  background-color: var(--footer-bakgrnd-transparent-color);
+  background-color: var(--footer-bckgrnd-transparent-color);
   grid-area: map-area;
 }
