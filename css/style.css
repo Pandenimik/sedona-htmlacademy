@@ -192,6 +192,7 @@ menu a {
   flex-direction: column;
   align-items: center;
   padding-top: 58px;
+  position: relative;
 }
 
 .hotel-search > .bold-text {
@@ -233,7 +234,7 @@ menu a {
   position: absolute;
   justify-self: center;
   background-color: var(--hotel-search_form-bckgrnd-color); 
-  /* display: none;  */
+  display: none; 
 }
 
 .map-grid {
@@ -255,4 +256,23 @@ menu a {
   margin-top: auto;
   background-color: var(--footer-bckgrnd-transparent-color);
   grid-area: map-area;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-tel {
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social {
+  width: 400px;
+}
+
+.footer-creators {
+  width: 327px;
 }
