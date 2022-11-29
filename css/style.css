@@ -1,12 +1,18 @@
 :root {
   --simple-text-color: #333;
+  --navigation-link-text-color_hover: #81B3D2;
+  --navigation-link-text-color_focus: #766357;
   --recomendation-text-bgrnd-color: #eee;
   --recomendation-advice-bkrnd-color: #fff;
-  --recomendations-inverse-bgrnd-color: #81B3D2;
+  --inverse-bgrnd-color: #81B3D2;
+  --inverse-bgrnd-color_hover: #669EC0;
+  --inverse-bgrnd-color_active: #5496BD;
   --recomendations-inverse-text-color: #fff;
-  --button-color-1: #766357;
+  --dark-bgrnd-color: #766357;
   --hotel-search_form-bckgrnd-color: #fff;
   --footer-bckgrnd-transparent-color: rgba(255, 255, 255, 0.9);
+  --creators-logo-color_hover: #81B3D2;
+  --creators-logo-color_active: #BDBBBC; 
 }
 
 body {
@@ -64,12 +70,25 @@ h6 {
 }
 
 /* Обнуляем стили по умолчанию ссылок меню*/
-menu a {
+.navigation_link {
   text-decoration: none;
   color: #000;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
+}
+
+.navigation_link:hover {
+  color: var(--navigation-link-text-color_hover);
+}
+
+.navigation_link:active {
+  color: var(--simple-text-color);
+  opacity: 0.3;
+}
+
+.navigation_link:focus {
+  color: var(--navigation-link-text-color_focus);
 }
 
 .left-navigation-menu {
@@ -149,7 +168,7 @@ menu a {
 }
 
 .recomendation-text__inverse {
-  background-color: var(--recomendations-inverse-bgrnd-color);
+  background-color: var(--inverse-bgrnd-color);
   color: var(--recomendations-inverse-text-color);
 }
 
@@ -170,7 +189,7 @@ menu a {
 }
 
 .recomendation-img {
-  background-color: var(--recomendations-inverse-bgrnd-color);
+  background-color: var(--inverse-bgrnd-color);
 }
 
 .recomendation-text__advice {
@@ -222,7 +241,7 @@ menu a {
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
-  background-color: var(--button-color-1);
+  background-color: var(--dark-bgrnd-color);
   cursor: pointer;
 }
 
@@ -267,12 +286,75 @@ menu a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.footer-tel_text {
+  margin: 0 0 10px 0;
 }
 
 .footer-social {
   width: 400px;
 }
 
+.footer-social_list {
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 6px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social_item {
+  width: 46px;
+  height: 48px;
+}
+
+.footer-social_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--inverse-bgrnd-color);
+}
+
+.footer-social_link:hover {
+  background-color: var(--inverse-bgrnd-color_hover);
+}
+
+.footer-social_link:active {
+  background-color: var(--inverse-bgrnd-color_active);
+}
+
+.footer-social_link:active .footer-social_logo {
+  opacity: 0.3;
+}
+
 .footer-creators {
   width: 327px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.footer-creators_text {
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.footer-creators svg:hover path {
+  fill: var(--creators-logo-color_hover);
+}
+
+.footer-creators svg:active path {
+  fill: var(--creators-logo-color_active);
 }
