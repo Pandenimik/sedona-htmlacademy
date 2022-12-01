@@ -344,6 +344,7 @@ h6 {
   justify-content: space-between;
   align-items: center;
   column-gap: 26px;
+  position: relative;
 }
 
 .hotel-search-form_label-for-number-of-guests-input:first-of-type {
@@ -356,13 +357,23 @@ h6 {
   border: none;
   background-color: var(--hotel-search-input-bckgrnd-color);
   text-align: center;
+  -moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+  padding: 0 40px;
 }
 
-.number-of-guests-input::-webkit-inner-spin-button {
-  background-image: url(../img/minus.svg);
-}
+.number-of-guests-input::-webkit-inner-spin-button,
 .number-of-guests-input::-webkit-outer-spin-button {
-  background-image: url(../img/plus.svg);
+  display: none;
+}
+
+.number-minus {
+  position: absolute;
+}
+
+.number-plus {
+  position: absolute;
 }
 
 .hotel-search-form_submit-button {

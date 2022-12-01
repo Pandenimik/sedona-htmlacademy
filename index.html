@@ -147,7 +147,11 @@
           <fieldset class='hotel-search-form_number-of-guests-fieldset'>
             <label for='number-of-adults' class='hotel-search-form_label-for-number-of-guests-input'>
               Взрослые:
-              <input type='number' name='number-of-adults' class='number-of-guests-input'>
+              <div class='number-input-container'>
+                <button class='number-minus' type='button' onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                <input type='number' name='number-of-adults' class='number-of-guests-input'>
+                <button class='number-plus' type='button' onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+              </div>  
             </label>
             <label for='number-of-childrens' class='hotel-search-form_label-for-number-of-guests-input'>
               Дети:
