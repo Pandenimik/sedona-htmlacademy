@@ -16,23 +16,23 @@
     <header class='header'>
       <nav class='navigation'>
         <h2 class='visually-hidden'>Меню навигации по сайту Седона</h2>
-        <menu class='left-navigation-menu'>
+        <nav class='left-navigation-menu'>
           <li class='left-navigation-menu_item'>
             <a href='#' class='navigation_link'>Информация</a>
           </li>
           <li class='left-navigation-menu_item'>
             <a href='#' class='navigation_link'>Фото и видео</a>
           </li>
-        </menu>
+        </nav>
         <img class='logo' src='img/logo.png' alt='Логотип' width='138' height='70'>
-        <menu class='right-navigation-menu'>
+        <nav class='right-navigation-menu'>
           <li class='right-navigation-menu_item'>
             <a href='#' class='navigation_link'>Карта штата</a>
           </li>
           <li class='right-navigation-menu_item'>
             <a href='#' class='navigation_link'>Гостиницы</a>
           </li>
-        </menu>
+        </nav>
       </nav>
     </header>
 
@@ -133,10 +133,32 @@
         <button class='hotel-search_button'>Поиск гостиницы в Седоне</button>    
       </section>
       <div class='map-grid'>
-        <form action='' class='hotel-search_form'></form>  
+        <form action='https://echo.htmlacademy.ru' method='get' class='hotel-search-form'>
+          <fieldset class='hotel-search-form_date-fieldset'>
+            <label for='arrival-date' class='hotel-search-form_label-for-date-input'>
+              Дата заезда:
+              <input type='date' name='arrival-date' class='hotel-search-form_date-input'>
+            </label>
+            <label for='departure-date' class='hotel-search-form_label-for-date-input'>
+              Дата выезда:
+              <input type='date' name='departure-date' class='hotel-search-form_date-input'>
+            </label>
+          </fieldset>
+          <fieldset class='hotel-search-form_number-of-guests-fieldset'>
+            <label for='number-of-adults' class='hotel-search-form_label-for-number-of-guests-input'>
+              Взрослые:
+              <input type='number' name='number-of-adults' class='number-of-guests-input'>
+            </label>
+            <label for='number-of-childrens' class='hotel-search-form_label-for-number-of-guests-input'>
+              Дети:
+              <input type='number' name='number-of-childrens' class='number-of-guests-input'>
+            </label>
+          </fieldset>
+          <button type='submit' class='hotel-search-form_submit-button'>Найти</button>
+        </form>
+
         <section class='map'>
-          <img src='img/map.png' alt='Карта местности Седона' class='map-img' width='1200' height='594'>
-          
+          <img src='img/map.png' alt='Карта местности Седона' class='map-img' width='1200' height='594'>          
         </section>
         <footer class='footer'>
           <section class='footer-tel'>
