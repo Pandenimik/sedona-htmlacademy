@@ -146,16 +146,16 @@
           </fieldset>
           <fieldset class='hotel-search-form_number-of-guests-fieldset'>
             <label for='number-of-adults' class='hotel-search-form_label-for-number-of-guests-input'>
-              Взрослые:
-              <div class='number-input-container'>
-                <button class='number-minus' type='button' onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
-                <input type='number' name='number-of-adults' class='number-of-guests-input'>
-                <button class='number-plus' type='button' onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
-              </div>  
+              Взрослые:            
+              <button class='number-minus' type='button' onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
+              <input type='number' name='number-of-adults' class='number-of-guests-input' min='0' max='90' value='1'>
+              <button class='number-plus' type='button' onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"></button>   
             </label>
             <label for='number-of-childrens' class='hotel-search-form_label-for-number-of-guests-input'>
               Дети:
-              <input type='number' name='number-of-childrens' class='number-of-guests-input'>
+              <button class='number-minus' type='button' onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
+              <input type='number' name='number-of-childrens' class='number-of-guests-input' min='0' max='90' value='0'>
+              <button class='number-plus' type='button' onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"></button>   
             </label>
           </fieldset>
           <button type='submit' class='hotel-search-form_submit-button'>Найти</button>

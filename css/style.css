@@ -348,7 +348,7 @@ h6 {
 }
 
 .hotel-search-form_label-for-number-of-guests-input:first-of-type {
-  width: 100%;
+  width: 246px;
 }
 
 .number-of-guests-input {
@@ -361,6 +361,8 @@ h6 {
 	-webkit-appearance: textfield;
 	appearance: textfield;
   padding: 0 40px;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .number-of-guests-input::-webkit-inner-spin-button,
@@ -370,10 +372,45 @@ h6 {
 
 .number-minus {
   position: absolute;
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  border: none;
+  background-image: url(../img/minus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 89px;
+  top: 13px;
+  cursor: pointer;
+}
+
+.number-minus:hover {
+  background-image: url(../img/minus__hover.svg);
+}
+
+.number-minus:active {
+  background-image: url(../img/minus__active.svg);
 }
 
 .number-plus {
   position: absolute;
+  padding: 0;
+  width: 11px;
+  height: 11px;
+  border: none;
+  background-image: url(../img/plus.svg);
+  background-repeat: no-repeat;
+  right: 18px;
+  top: 14px;
+  cursor: pointer;
+}
+
+.number-plus:hover {
+  background-image: url(../img/plus__hover.svg);
+}
+
+.number-plus:active {
+  background-image: url(../img/plus__active.svg);
 }
 
 .hotel-search-form_submit-button {
