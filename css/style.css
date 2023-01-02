@@ -1,22 +1,22 @@
 :root {
   --simple-text-color: #333;
-  --navigation-link-text-color_hover: #81B3D2;
+  --navigation-link-text-color_hover: #81b3d2;
   --navigation-link-text-color_focus: #766357;
   --recomendation-text-bgrnd-color: #eee;
   --recomendation-advice-bkrnd-color: #fff;
-  --inverse-bgrnd-color: #81B3D2;
-  --inverse-bgrnd-color_hover: #669EC0;
-  --inverse-bgrnd-color_active: #5496BD;
+  --inverse-bgrnd-color: #81b3d2;
+  --inverse-bgrnd-color_hover: #669ec0;
+  --inverse-bgrnd-color_active: #5496bd;
   --inverse-text-color: #fff;
   --inverse-text-opacity-color: rgba(255, 255, 255, 0.3);
   --dark-bgrnd-color: #766357;
-  --dark-bgrnd-color__hover: #604E43;
-  --dark-bgrnd-color__active: #503E33;
+  --dark-bgrnd-color__hover: #604e43;
+  --dark-bgrnd-color__active: #503e33;
   --hotel-search_form-bckgrnd-color: #fff;
   --hotel-search-input-bckgrnd-color: #f2f2f2;
   --footer-bckgrnd-transparent-color: rgba(255, 255, 255, 0.9);
-  --creators-logo-color_hover: #81B3D2;
-  --creators-logo-color_active: #BDBBBC; 
+  --creators-logo-color_hover: #81b3d2;
+  --creators-logo-color_active: #bdbbbc;
 }
 * {
   box-sizing: border-box;
@@ -30,10 +30,10 @@ body {
 }
 
 h1,
-h2, 
-h3, 
-h4, 
-h5, 
+h2,
+h3,
+h4,
+h5,
 h6 {
   margin: 0;
   padding: 0;
@@ -102,7 +102,7 @@ h6 {
   flex-wrap: wrap;
 }
 
-.left-navigation-menu_item:not(:first-child)  {
+.left-navigation-menu_item:not(:first-child) {
   margin: 0 auto;
 }
 
@@ -112,7 +112,7 @@ h6 {
   justify-content: end;
 }
 
-.right-navigation-menu_item:not(:last-child)  {
+.right-navigation-menu_item:not(:last-child) {
   margin: 0 auto;
 }
 
@@ -312,18 +312,18 @@ h6 {
   background-color: var(--hotel-search-input-bckgrnd-color);
 }
 
-.hotel-search-form_date-input::-webkit-calendar-picker-indicator { 
+.hotel-search-form_date-input::-webkit-calendar-picker-indicator {
   width: 21px;
   height: 23px;
   background-image: url(../img/calendar.svg);
   cursor: pointer;
 }
 
-.hotel-search-form_date-input::-webkit-calendar-picker-indicator:hover { 
+.hotel-search-form_date-input::-webkit-calendar-picker-indicator:hover {
   background-image: url(../img/calendar__hover.svg);
 }
 
-.hotel-search-form_date-input::-webkit-calendar-picker-indicator:active { 
+.hotel-search-form_date-input::-webkit-calendar-picker-indicator:active {
   background-image: url(../img/calendar__active.png);
 }
 
@@ -331,7 +331,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   column-gap: 32px;
-  margin:0 0 54px 0;
+  margin: 0 0 54px 0;
   width: 458px;
   padding: 0;
   border: none;
@@ -342,7 +342,7 @@ h6 {
 }
 
 .hotel-search-form_label-for-number-of-guests-input {
-  min-width: 180px; 
+  min-width: 180px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -361,8 +361,8 @@ h6 {
   background-color: var(--hotel-search-input-bckgrnd-color);
   text-align: center;
   -moz-appearance: textfield;
-	-webkit-appearance: textfield;
-	appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
   padding: 0 40px;
   font-size: 14px;
   font-weight: 700;
