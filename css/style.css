@@ -26,7 +26,7 @@ body {
   background-color: #eee;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
 h1,
@@ -76,7 +76,7 @@ h6 {
 }
 
 /* Обнуляем стили по умолчанию ссылок меню*/
-.navigation_link {
+.navigation__link {
   text-decoration: none;
   color: #000;
   text-transform: uppercase;
@@ -84,16 +84,16 @@ h6 {
   font-size: 14px;
 }
 
-.navigation_link:hover {
+.navigation__link:hover {
   color: var(--navigation-link-text-color_hover);
 }
 
-.navigation_link:active {
+.navigation__link:active {
   color: var(--simple-text-color);
   opacity: 0.3;
 }
 
-.navigation_link:focus {
+.navigation__link:focus {
   color: var(--navigation-link-text-color_focus);
 }
 
@@ -102,7 +102,7 @@ h6 {
   flex-wrap: wrap;
 }
 
-.left-navigation-menu_item:not(:first-child) {
+.left-navigation-menu__item:not(:first-child) {
   margin: 0 auto;
 }
 
@@ -112,7 +112,7 @@ h6 {
   justify-content: end;
 }
 
-.right-navigation-menu_item:not(:last-child) {
+.right-navigation-menu__item:not(:last-child) {
   margin: 0 auto;
 }
 
@@ -157,7 +157,7 @@ h6 {
   flex-wrap: wrap;
 }
 
-.recomendations-list_item {
+.recomendations-list__item {
   display: flex;
 }
 
@@ -173,24 +173,24 @@ h6 {
   background-color: var(--recomendation-text-bgrnd-color);
 }
 
-.recomendation-text__inverse {
+.recomendation-text_inverse {
   background-color: var(--inverse-bgrnd-color);
   color: var(--inverse-text-color);
 }
 
-.recomendation-text_heading {
+.recomendation-text__heading {
   margin-bottom: 25px;
   font-size: 21px;
   line-height: 21px;
 }
 
-.recomendation-text_main-text {
+.recomendation-text__main-text {
   margin: 0 0 23px 0;
   font-size: 14px;
   line-height: 21px;
 }
 
-.recomendation-text_main-text__other-style {
+.recomendation-text__main-text_other-style {
   color: var(--simple-text-color);
 }
 
@@ -198,7 +198,7 @@ h6 {
   background-color: var(--inverse-bgrnd-color);
 }
 
-.recomendation-text__advice {
+.recomendation-text_advice {
   height: 330px;
   background-color: var(--recomendation-advice-bkrnd-color);
 }
@@ -239,7 +239,7 @@ h6 {
   color: var(--simple-text-color);
 }
 
-.hotel-search_button {
+.hotel-search__button {
   width: 568px;
   height: 86px;
   border: none;
@@ -251,11 +251,11 @@ h6 {
   cursor: pointer;
 }
 
-.hotel-search_button:hover {
+.hotel-search__button:hover {
   background-color: var(--dark-bgrnd-color__hover);
 }
 
-.hotel-search_button:active {
+.hotel-search__button:active {
   background-color: var(--dark-bgrnd-color__active);
   color: var(--inverse-text-opacity-color);
 }
@@ -278,7 +278,7 @@ h6 {
   display: none;
 }
 
-.hotel-search-form_date-fieldset {
+.hotel-search-form__date-fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -293,14 +293,14 @@ h6 {
   line-height: 26px;
 }
 
-.hotel-search-form_label-for-date-input {
+.hotel-search-form__label-for-date-input {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.hotel-search-form_date-input {
+.hotel-search-form__date-input {
   box-sizing: border-box;
   border: none;
   width: 325px;
@@ -312,22 +312,22 @@ h6 {
   background-color: var(--hotel-search-input-bckgrnd-color);
 }
 
-.hotel-search-form_date-input::-webkit-calendar-picker-indicator {
+.hotel-search-form__date-input::-webkit-calendar-picker-indicator {
   width: 21px;
   height: 23px;
   background-image: url(../img/calendar.svg);
   cursor: pointer;
 }
 
-.hotel-search-form_date-input::-webkit-calendar-picker-indicator:hover {
+.hotel-search-form__date-input::-webkit-calendar-picker-indicator:hover {
   background-image: url(../img/calendar__hover.svg);
 }
 
-.hotel-search-form_date-input::-webkit-calendar-picker-indicator:active {
+.hotel-search-form__date-input::-webkit-calendar-picker-indicator:active {
   background-image: url(../img/calendar__active.png);
 }
 
-.hotel-search-form_number-of-guests-fieldset {
+.hotel-search-form__number-of-guests-fieldset {
   display: flex;
   justify-content: space-between;
   column-gap: 32px;
@@ -341,7 +341,7 @@ h6 {
   line-height: 26px;
 }
 
-.hotel-search-form_label-for-number-of-guests-input {
+.hotel-search-form__label-for-number-of-guests-input {
   min-width: 180px;
   display: flex;
   justify-content: space-between;
@@ -350,7 +350,7 @@ h6 {
   position: relative;
 }
 
-.hotel-search-form_label-for-number-of-guests-input:first-of-type {
+.hotel-search-form__label-for-number-of-guests-input:first-of-type {
   width: 246px;
 }
 
@@ -416,7 +416,7 @@ h6 {
   background-image: url(../img/plus__active.svg);
 }
 
-.hotel-search-form_submit-button {
+.hotel-search-form__submit-button {
   border: none;
   width: 458px;
   height: 58px;
@@ -429,18 +429,18 @@ h6 {
   cursor: pointer;
 }
 
-.hotel-search-form_submit-button:hover {
+.hotel-search-form__submit-button:hover {
   background-color: var(--inverse-bgrnd-color_hover);
 }
 
-.hotel-search-form_submit-button:active {
+.hotel-search-form__submit-button:active {
   background-color: var(--inverse-bgrnd-color_active);
   color: var(--inverse-text-opacity-color);
 }
 
 .map-grid {
   display: grid;
-  grid-template-areas: 'map-area';
+  grid-template-areas: "map-area";
   position: relative;
 }
 
@@ -473,7 +473,7 @@ h6 {
   line-height: 26px;
 }
 
-.footer-tel_text {
+.footer-tel__text {
   margin: 0 0 10px 0;
 }
 
@@ -481,7 +481,7 @@ h6 {
   width: 400px;
 }
 
-.footer-social_list {
+.footer-social__list {
   height: 100%;
   list-style: none;
   padding: 0;
@@ -493,12 +493,12 @@ h6 {
   align-items: center;
 }
 
-.footer-social_item {
+.footer-social__item {
   width: 46px;
   height: 48px;
 }
 
-.footer-social_link {
+.footer-social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -507,15 +507,15 @@ h6 {
   background-color: var(--inverse-bgrnd-color);
 }
 
-.footer-social_link:hover {
+.footer-social__link:hover {
   background-color: var(--inverse-bgrnd-color_hover);
 }
 
-.footer-social_link:active {
+.footer-social__link:active {
   background-color: var(--inverse-bgrnd-color_active);
 }
 
-.footer-social_link:active .footer-social_logo {
+.footer-social__link:active .footer-social_logo {
   opacity: 0.3;
 }
 
@@ -527,7 +527,7 @@ h6 {
   column-gap: 15px;
 }
 
-.footer-creators_text {
+.footer-creators__text {
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
